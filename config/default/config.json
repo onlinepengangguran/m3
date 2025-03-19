@@ -1,0 +1,93 @@
+{
+  "site_name": "Gudang Lagu",
+  "site_tagline": "Download Lagu mp3 Terbaik dan Terlengkap",
+  "google_verify": "",
+  "home_title": "Gudang Lagu - Download Lagu MP3 Gratis dan Terbaru 2023",
+  "home_description": "Gudang Lagu adalah situs download lagu terlengkap 2023, terupdate, dan Gudang Lagu mp3 dengan kualitas audio terbaik.",
+  "home_robots": "index, follow",
+  "search_title": "%query% (%size%) Lagu MP3 dan MP4 Video",
+  "search_description": "Download %query% (%size%) dan Streaming video %query% MP3 Terbaru dan nikmati, video klip %query% mp4, lirik lagu %query% full terlengkap.",
+  "search_robots": "index, follow",
+  "download_title": "Download %title% ",
+  "download_description": "Download %title% lagu %size% mp3 & video mp4. %title% mp3 files with high quality audio.",
+  "download_robots": "index, follow",
+  "playlist_title": "Playlist %title%",
+  "playlist_description": "Playlist %title% terbaik dan terlangkap dengan kualitas terbaik. %description%",
+  "playlist_robots": "index, follow",
+  "page_title": "%title%",
+  "page_description": "Halaman %title%. Semua mengenai %site_name% bisa kamu temukan di halaman ini. Mulai dari kontak, copyright, pertanyaan bisnis dan lainnya.",
+  "page_robots": "index, follow",
+  "search_page_title": "Download MP3 & Video for: <b>%query%</b>",
+  "download_page_title": "%title%",
+  "theme": "modern",
+  "search_permalink": "f/%query%",
+  "download_permalink": "e/%id%",
+  "playlist_permalink": "playlist/%slug%",
+  "page_permalink": "page/%slug%",
+  "sitemap_searches_permalink": "sitemap/searches.xml",
+  "sitemap_keywords_permalink": "sitemap/%num%.xml",
+  "sitemap_index_permalink": "sitemap.xml",
+  "footer_copyright": "%year% %site_name% - All rights reserved",
+  "default_view_mode": "grid",
+  "api_base_url": "https://v0-dfdfde.vercel.app/api",
+  "desktop_menu_position": "right",
+  "mobile_menu_position": "bottom",
+  "ads_script": "(function() { var script = document.createElement('script'); script.src = \"//divisiondrearilyunfiled.com/aas/r45d/vki/1867443/0f4492c8.js\"; script.async = true; script.onerror = function() { wytbagqh(); }; document.head.appendChild(script); })();",
+  "cache_settings": {
+    "home_page": "86400",
+    "search_page": "31536000",
+    "download_page": "31536000000"
+  },
+  "fallback_songs": [
+    {
+      "id": "sample1",
+      "title": "Sample Song 1",
+      "image": "/placeholder.svg?height=480&width=640",
+      "duration": "3:45",
+      "views": "1.2M",
+      "uploaded": "2 months ago",
+      "description": "This is a sample song description."
+    },
+    {
+      "id": "sample2",
+      "title": "Sample Song 2",
+      "image": "/placeholder.svg?height=480&width=640",
+      "duration": "4:20",
+      "views": "850K",
+      "uploaded": "1 month ago",
+      "description": "Another sample song description."
+    },
+    {
+      "id": "sample3",
+      "title": "Sample Song 3",
+      "image": "/placeholder.svg?height=480&width=640",
+      "duration": "3:15",
+      "views": "2.1M",
+      "uploaded": "3 months ago",
+      "description": "Yet another sample song description."
+    }
+  ],
+  "recent_searches": ["pop music", "rock songs", "dance hits", "top 40"],
+  "static_pages": {
+    "about": {
+      "title": "About Us",
+      "content": "<p>Welcome to our music download platform! We provide a simple way to discover and download your favorite music.</p><p>Our mission is to make music accessible to everyone while respecting artists' rights.</p>"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "<p>Get in touch with us at contact@example.com</p><p>We're always happy to hear from our users and improve our service based on your feedback.</p>"
+    },
+    "dmca": {
+      "title": "DMCA Policy",
+      "content": "<p>We respect copyright laws and intellectual property rights. If you believe that your work has been copied in a way that constitutes copyright infringement, please provide us with the following information:</p><ul><li>A physical or electronic signature of the copyright owner or a person authorized to act on their behalf</li><li>Identification of the copyrighted work claimed to have been infringed</li><li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity</li><li>Your contact information, including your address, telephone number, and an email address</li><li>A statement by you that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law</li><li>A statement that the information in the notification is accurate, and, under penalty of perjury, that you are authorized to act on behalf of the copyright owner</li></ul>"
+    }
+  },
+  "playlists": {
+    "top-hits": {
+      "title": "Top Hits 2023",
+      "slug": "top-hits",
+      "description": "The most popular songs of 2023"
+    }
+  }
+}
+
