@@ -17,7 +17,11 @@ type Props = {
 export const revalidate = false // This means the page will be cached indefinitely
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const song = await getSongById(params.id)
+  // Remove unsupported metadata themeColor
+  // Remove unsupported metadata themeColor
+  // Remove unsupported metadata themeColor
+  const { id } = await params; // Await params before using its properties
+  const song = await getSongById(id)
 
   if (!song) {
     return {
@@ -34,8 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function DownloadPage({ params }: Props) {
-  const song = await getSongById(params.id)
-  const relatedSongs = await getRelatedSongs(params.id)
+  const { id } = await params; // Await params before using its properties
+  const song = await getSongById(id)
+  const relatedSongs = await getRelatedSongs(id)
 
   if (!song) {
     return (
@@ -61,7 +66,7 @@ export default async function DownloadPage({ params }: Props) {
             dangerouslySetInnerHTML={{ __html: config.download_page_title.replace("%title%", song.title) }}
           />
 
-          <VideoPlayer videoId={params.id} title={song.title} thumbnail={song.image} />
+          <VideoPlayer videoId={id} protected_embed={song.protected_embed} title={song.title} thumbnail={song.image} />
 
           <div className="video-details">
             <div className="video-details-meta">
@@ -142,4 +147,3 @@ export default async function DownloadPage({ params }: Props) {
     </div>
   )
 }
-

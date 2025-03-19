@@ -13,7 +13,7 @@ type Props = {
 export const revalidate = 31536000 // 1 year in seconds
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const query = decodeURIComponent(params.query)
+  const { query } = await params
   const songs = await searchSongs(query)
 
   return {
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function SearchPage({ params }: Props) {
-  const query = decodeURIComponent(params.query)
+  const { query } = await params
   const songs = await searchSongs(query)
 
   return (
@@ -50,4 +50,3 @@ export default async function SearchPage({ params }: Props) {
     </div>
   )
 }
-

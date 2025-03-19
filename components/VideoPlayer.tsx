@@ -7,9 +7,10 @@ interface VideoPlayerProps {
   videoId: string
   title: string
   thumbnail?: string
+  protected_embed: string // Added protected_embed prop
 }
 
-export default function VideoPlayer({ videoId, title, thumbnail }: VideoPlayerProps) {
+export default function VideoPlayer({ videoId, protected_embed, title, thumbnail }: VideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
 
   const handlePlay = () => {
@@ -22,7 +23,7 @@ export default function VideoPlayer({ videoId, title, thumbnail }: VideoPlayerPr
         {isPlaying ? (
           <iframe
             className="player-iframe"
-            src={`https://ymusik.github.io/?videoId={videoId}`}
+            src={protected_embed}
             title={title}
             allowFullScreen
           ></iframe>
@@ -46,4 +47,3 @@ export default function VideoPlayer({ videoId, title, thumbnail }: VideoPlayerPr
     </div>
   )
 }
-
